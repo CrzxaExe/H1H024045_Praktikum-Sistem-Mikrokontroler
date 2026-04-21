@@ -2,7 +2,7 @@
 
 > Pertanyaan
 
-## 3.5.4
+## 3.5.4 Percobaan 3A: Komunikasi Serial (UART)
 
 1. Jelaskan proses dari input keyboard hingga LED menyala/mati!
 
@@ -64,7 +64,7 @@ void loop() { // Fungsi yang akan di jalankan secara terus menerus
 
 > Pada sistem ini digunakan fungsi `millis()`. Jika menggunakan delay, program akan terkena blocking saat delay dijalankan yang akan mengakibatkan mikrokontroler tidak responsif karena sedang terhenti sesaat yang artinya program perlu menunggu hingga jeda delay sebelum melanjutkan perintah selanjutnya. Dengan menggunakan millis, mikrokontroler akan berjalan secara non-blocking.
 
-## 3.6.4
+## 3.6.4 Percobaan 3B: Inter-Integrated Circuit (I2C)
 
 1. Jelaskan bagaimana cara kerja komunikasi I2C antara Arduino dan LCD pada rangkaian tersebut!
 
@@ -78,6 +78,8 @@ void loop() { // Fungsi yang akan di jalankan secara terus menerus
 
    | ADC: 0 | Volt: 0.00V | Persen: 0% |
    | ------ | ----------- | ---------- |
+
+   <br />- ADC: 0 0% | setCursor(0, 0) dan Bar (level) | setCursor(0, 1)
 
 ```c++
 #include <Wire.h>
